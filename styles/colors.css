@@ -1,0 +1,5 @@
+:root {
+    --text: light-dark(#111, #eee);
+    --base: light-dark(#eee, #111);
+    --green: light-dark(#3ec762, #306b40);
+}

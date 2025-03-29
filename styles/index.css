@@ -1,0 +1,42 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+    background-color: var(--base);
+    color: var(--text);
+    fill: var(--text);
+    min-height: 95vh;
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .socials {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            img {
+                filter: invert(95%);
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        footer .socials img {
+            filter: invert(5%);
+        }
+    }
+}
