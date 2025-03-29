@@ -1,5 +1,4 @@
 import buildFooter from '../templates/site-footer.js';
-import SiteFooter from '../templates/site-footer.js';
 import buildNav from '../templates/site-nav.js';
 import buildHeader from './../templates/site-header.js'
 
@@ -17,6 +16,3 @@ const footers = document.getElementsByTagName('footer');
 if (footers.length) {
     buildFooter(footers[0])
 }
-//customElements.define('site-header', SiteHeader);
-//customElements.define('site-nav', SiteNav);
-//customElements.define('site-footer', SiteFooter);
