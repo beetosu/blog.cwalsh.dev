@@ -15,7 +15,7 @@ const socialList = [
 
 export default function buildFooter(footerElement) {
     const blurb = document.createElement('p');
-    blurb.innerHTML = 'Made w/ <3 by <a href="https://cwalsh.dev">Colin Walsh</a>';
+    blurb.textContent = 'Made w/ <3';
     footerElement.appendChild(blurb);
 
     const socials = document.createElement('div');
