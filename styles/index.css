@@ -80,9 +80,9 @@ body {
 
 body.transition-green {
     background-color: var(--green);
-    -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
+    -webkit-transition: background-color 250ms linear;
+    -ms-transition: background-color 250ms linear;
+    transition: background-color 250ms linear;
 }
 
 .green {
