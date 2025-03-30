@@ -41,9 +41,32 @@ body {
         }
     }
 
+    .article-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        button {
+            border: 0;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    }
+
     @media (prefers-color-scheme: dark) {
         footer .socials img {
             filter: invert(5%);
         }
     }
+}
+
+body.transition-green {
+    background-color: var(--green);
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.green {
+    background: var(--green);
 }
