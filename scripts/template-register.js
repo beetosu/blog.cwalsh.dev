@@ -4,3 +4,5 @@ const footers = document.getElementsByTagName('footer');
 if (footers.length) {
     buildFooter(footers[0])
 }
+
+document.body.className = '';
