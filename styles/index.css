@@ -16,6 +16,12 @@ body {
     fill: var(--text);
     min-height: 95vh;
 
+    header {
+        background-color: #e6d86e;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
     .space {
         display: grid;
         grid-template-columns: repeat(20, 1fr);
