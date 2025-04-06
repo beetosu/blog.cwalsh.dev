@@ -48,7 +48,7 @@ function buildEventListeners(guyId, infoClass, activeSprite, inactiveSprite) {
 buildEventListeners('about-guy', 'about');
 buildEventListeners('posts-guy', 'posts', 'posts-guy-active', 'posts-guy-inactive');
 
-const hasTouchSupport = 'ontouchstart' in window || navigator.maxTouchPoints;
+const hasTouchSupport = 'ontouchstart' in window;
 
 if (hasTouchSupport) {
     // For now, just make all of the guys active for mobile.

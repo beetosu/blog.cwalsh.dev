@@ -20,6 +20,7 @@ body {
         background-color: #e6d86e;
         padding: 8px;
         border-radius: 8px;
+        margin-bottom: 50px;;
     }
 
     .space {
@@ -29,17 +30,25 @@ body {
         margin: auto;
 
         .info {
+            align-items: center;
+            display: grid;
+            text-decoration: none;
+
             &.active {
                 visibility: visible;
 
-                &.text {
+                .text {
+                    color: initial;
+                    margin: 0;
+                    text-align: center;
                     transition-delay: 250ms;
                     transition-property: visibility;
                 }
 
-                &.speech-bubble {
+                .speech-bubble {
                     animation: speech-bubble 250ms steps(1);
                     object-position: 100% 0%;
+                    z-index: -1;
                 }
             }
 
@@ -47,12 +56,13 @@ body {
                 visibility: hidden;
             }
 
-            &.text {
+            .text {
+                grid-area: 1 / 1 / 1 / 1;
                 margin: auto;
             }
 
-            &.speech-bubble {
-                z-index: -1;
+            .speech-bubble {
+                grid-area: 1 / 1 / 1 / 1;
                 object-fit: cover;
                 height: 100px;
                 width: 100px;
@@ -84,7 +94,7 @@ body {
             grid-column: -6 / -8;
             grid-row: -7 / -5;
 
-            &.speech-bubble {
+            .speech-bubble {
                 -webkit-transform: scaleX(-1);
                 transform: scaleX(-1);
             }
