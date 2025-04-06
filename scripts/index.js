@@ -78,11 +78,11 @@ for (let backgroundIdx = 1; backgroundIdx < 6; backgroundIdx++) {
                 fnSetClassnameToActive();
             } else {
                 document.getElementById(backgroundId).className =  'mid-active-1';
-                setTimeout(fnSetClassnameToActive, 64000);
+                setTimeout(fnSetClassnameToActive, 63500);
             }
         } else {
             document.getElementById(backgroundId).className =  'mid-active-2';
-            setTimeout(fnSetClassnameToActive, 35000);
+            setTimeout(fnSetClassnameToActive, 34500);
         }
     } else {
         setTimeout(fnSetClassnameToActive, Math.floor(Math.random() * 25000));
