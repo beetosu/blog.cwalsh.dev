@@ -115,15 +115,24 @@ body {
             z-index: -2;
 
             &.active {
-                animation: background-pan 100s infinite;                
+                animation: background-pan 100s infinite;
+                -webkit-animation: background-pan;
+                -webkit-animation-duration: 100s;
+                -webkit-animation-iteration-count: infinite;              
             }
 
             &.mid-active-1 {
                 animation: partial-background-pan-1 64s;
+                -webkit-animation: partial-background-pan-1;
+                -webkit-animation-duration: 64s;
+                -webkit-animation-iteration-count: infinite;
             }
 
             &.mid-active-2 {
                 animation: partial-background-pan-2 35s;
+                -webkit-animation: partial-background-pan-2;
+                -webkit-animation-duration: 35s;
+                -webkit-animation-iteration-count: infinite;
             }
 
             &#background1 {
