@@ -47,3 +47,15 @@ function buildEventListeners(guyId, infoClass, activeSprite, inactiveSprite) {
 
 buildEventListeners('about-guy', 'about');
 buildEventListeners('posts-guy', 'posts', 'posts-guy-active', 'posts-guy-inactive');
+
+const hasTouchSupport = 'ontouchstart' in window || navigator.maxTouchPoints;
+
+if (hasTouchSupport) {
+    // For now, just make all of the guys active for mobile.
+    // Eventually, it would be fun to have some scroll stuff here, but that's
+    // hard :/
+    handleMouseEnter('about');
+
+    const postGuy = document.getElementById('posts-guy');
+    handleMouseEnter('posts', 'posts-guy-active', postGuy);
+}
