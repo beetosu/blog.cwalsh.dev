@@ -107,6 +107,46 @@ body {
             z-index: -1;
         }
     }
+
+    .background {
+        img {
+            left: -20vw;
+            position: absolute;
+            z-index: -2;
+
+            &.active {
+                animation: background-pan 100s infinite;                
+            }
+
+            &.mid-active-1 {
+                animation: partial-background-pan-1 64s;
+            }
+
+            &.mid-active-2 {
+                animation: partial-background-pan-2 35s;
+            }
+
+            &#background1 {
+                top: 10vh;
+            }
+            
+            &#background2 {
+                top: 30vh;
+            }
+
+            &#background3 {
+                top: 50vh;
+            }
+
+            &#background4 {
+                top: 70vh;
+            }
+
+            &#background5 {
+                top: 90vh;
+            }
+        }
+    }
 }
 
 @keyframes speech-bubble {
@@ -116,6 +156,33 @@ body {
 
     33% {
         object-position: 50% 0%;
+    }
+}
+
+@keyframes background-pan {
+    0% {
+        left: -20vw;
+    }
+    100% {
+        left: 120vw;
+    }
+}
+
+@keyframes partial-background-pan-1 {
+    0% {
+        left: 30vw;
+    }
+    100% {
+        left: 120vw;
+    }
+}
+
+@keyframes partial-background-pan-2 {
+    0% {
+        left: 70vw;
+    }
+    100% {
+        left: 120vw;
     }
 }
 
