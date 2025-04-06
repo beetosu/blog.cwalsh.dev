@@ -32,11 +32,13 @@ body {
         .info {
             align-items: center;
             display: grid;
+            text-decoration: none;
 
             &.active {
                 visibility: visible;
 
                 .text {
+                    color: initial;
                     margin: 0;
                     text-align: center;
                     transition-delay: 250ms;
