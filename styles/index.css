@@ -170,28 +170,28 @@ body {
 
 @keyframes background-pan {
     0% {
-        left: -20%;
+        left: -35%;
     }
     100% {
-        left: 120%;
+        left: 105%;
     }
 }
 
 @keyframes partial-background-pan-1 {
     0% {
-        left: 30%;
+        left: 15%;
     }
     100% {
-        left: 120%;
+        left: 105%;
     }
 }
 
 @keyframes partial-background-pan-2 {
     0% {
-        left: 70%;
+        left: 55%;
     }
     100% {
-        left: 120%;
+        left: 105%;
     }
 }
 
