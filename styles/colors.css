@@ -3,4 +3,5 @@
     --base: light-dark(#eee, #111);
     --container: light-dark(#ddd, #222);
     --green: light-dark(#3ec762, #306b40);
+    --blue: #66b3ff;
 }
