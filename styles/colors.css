@@ -1,7 +1,7 @@
 :root {
-    --text: light-dark(#111, #eee);
-    --base: light-dark(#eee, #111);
-    --container: light-dark(#ddd, #222);
+    --text: #111;
+    --base: #eee;
+    --container: #ddd;
     --green: light-dark(#3ec762, #306b40);
     --blue: #66b3ff;
 }
