@@ -110,7 +110,7 @@ body {
 
     .background {
         img {
-            left: -20vw;
+            left: -120%;
             position: absolute;
             z-index: -2;
 
@@ -170,28 +170,28 @@ body {
 
 @keyframes background-pan {
     0% {
-        left: -20vw;
+        left: -20%;
     }
     100% {
-        left: 120vw;
+        left: 120%;
     }
 }
 
 @keyframes partial-background-pan-1 {
     0% {
-        left: 30vw;
+        left: 30%;
     }
     100% {
-        left: 120vw;
+        left: 120%;
     }
 }
 
 @keyframes partial-background-pan-2 {
     0% {
-        left: 70vw;
+        left: 70%;
     }
     100% {
-        left: 120vw;
+        left: 120%;
     }
 }
 
