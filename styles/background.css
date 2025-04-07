@@ -1,0 +1,75 @@
+.background {
+    img {
+        left: -120%;
+        position: absolute;
+        z-index: -2;
+
+        &.active {
+            animation: background-pan 100s infinite;
+            -webkit-animation: background-pan;
+            -webkit-animation-duration: 100s;
+            -webkit-animation-iteration-count: infinite;              
+        }
+
+        &.mid-active-1 {
+            animation: partial-background-pan-1 64s;
+            -webkit-animation: partial-background-pan-1;
+            -webkit-animation-duration: 64s;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        &.mid-active-2 {
+            animation: partial-background-pan-2 35s;
+            -webkit-animation: partial-background-pan-2;
+            -webkit-animation-duration: 35s;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        &#background1 {
+            top: 10vh;
+        }
+        
+        &#background2 {
+            top: 30vh;
+        }
+
+        &#background3 {
+            top: 50vh;
+        }
+
+        &#background4 {
+            top: 70vh;
+        }
+
+        &#background5 {
+            top: 90vh;
+        }
+    }
+}
+
+@keyframes background-pan {
+    0% {
+        left: -35%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+@keyframes partial-background-pan-1 {
+    0% {
+        left: 15%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+@keyframes partial-background-pan-2 {
+    0% {
+        left: 55%;
+    }
+    100% {
+        left: 105%;
+    }
+}
