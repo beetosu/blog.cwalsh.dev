@@ -1,7 +1,14 @@
 .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
     img {
-        left: -120%;
-        position: absolute;
+        left: -20vw;
+        position: relative;
         z-index: -2;
 
         &.active {
@@ -49,27 +56,27 @@
 
 @keyframes background-pan {
     0% {
-        left: -35%;
+        left: -20vw;
     }
     100% {
-        left: 105%;
+        left: 100vw;
     }
 }
 
 @keyframes partial-background-pan-1 {
     0% {
-        left: 15%;
+        left: 30vw;
     }
     100% {
-        left: 105%;
+        left: 120vw;
     }
 }
 
 @keyframes partial-background-pan-2 {
     0% {
-        left: 55%;
+        left: 70vw;
     }
     100% {
-        left: 105%;
+        left: 120vw;
     }
 }
