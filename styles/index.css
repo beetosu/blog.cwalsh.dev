@@ -20,7 +20,20 @@ body {
         background-color: #e6d86e;
         padding: 8px;
         border-radius: 8px;
-        margin-bottom: 50px;;
+        margin-bottom: 50px;
+        box-shadow: 6px 3px 0px #867d3c, 7px 5px 10px;
+        text-align: center;
+
+        h1 {
+            text-shadow: #554f40 1px 2px 0px;
+            color: #7b7757;
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            color: #554f40;
+        }
     }
 
     .space {
