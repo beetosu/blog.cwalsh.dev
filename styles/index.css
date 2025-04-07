@@ -15,6 +15,7 @@ body {
     color: var(--text);
     fill: var(--text);
     min-height: 95vh;
+    overflow: hidden;
 
     header {
         background-color: #e6d86e;
