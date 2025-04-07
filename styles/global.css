@@ -1,0 +1,19 @@
+:root {
+    color-scheme: light dark;
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: var(--blue);
+    color: var(--text);
+    fill: var(--text);
+    min-height: 95vh;
+    overflow-x: hidden;
+}
