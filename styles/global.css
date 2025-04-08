@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: "Lucida Console", FreeMono, monospace;
     background-color: var(--blue);
     color: var(--text);
     fill: var(--text);
