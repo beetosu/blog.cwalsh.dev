@@ -5,11 +5,14 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    z-index: -2;
 
     img {
         left: -20vw;
         position: relative;
-        z-index: -2;
 
         &.active {
             animation: background-pan 100s infinite;
