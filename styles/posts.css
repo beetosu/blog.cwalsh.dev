@@ -1,0 +1,21 @@
+body {
+    margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-list {
+    background-color: #fff;
+    padding: 16px;
+    width: 90vw;
+    max-width: 1000px;
+    border-radius: 16px;
+    min-height: 60vh;
+}
+
+.posts-guy {
+    align-self: center;
+}
